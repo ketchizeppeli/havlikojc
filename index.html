@@ -4,23 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>havlikojc</title>
-  <meta name="description" content="havlikojc — minimalist splash page" />
-  <style>
-    :root{--bg:#071028;--name:#e6eef8;--accent:#39a7ff}
-    html,body{height:100%;margin:0}
-    body{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--bg),#0f1724);font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
-    .wrap{display:flex;align-items:center;gap:18px}
-    .mark{width:96px;height:96px;border-radius:18px;background:linear-gradient(135deg,var(--accent),#7be3ff);display:flex;align-items:center;justify-content:center;color:#042433;font-weight:700;font-size:44px;opacity:0;transform:translateY(8px) scale(.98);animation:fadeUp 1.8s cubic-bezier(.2,.9,.3,1) forwards .2s}
-    .title{font-size:64px;color:var(--name);text-transform:lowercase;letter-spacing:0.02em;margin:0;opacity:0;transform:translateY(8px) scale(.98);animation:fadeUp 1.8s cubic-bezier(.2,.9,.3,1) forwards .6s}
-    @keyframes fadeUp{to{opacity:1;transform:none}}
-    @media (max-width:560px){.mark{width:64px;height:64px;font-size:28px}.title{font-size:34px}}
-    @media (prefers-reduced-motion:reduce){.mark,.title{animation:none;opacity:1;transform:none}}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="wrap" role="banner" aria-label="havlikojc splash">
-    <div class="mark" aria-hidden="true">h</div>
-    <h1 class="title">havlikojc</h1>
+  <main role="banner" aria-label="havlikojc splash">
+    <h1 class="site-name">havlikojc</h1>
   </main>
 </body>
 </html>
